@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0f7ff;
+    color: #333;
+}
+
+header .hero {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.div1 {
+    text-align: center;
+    background-color: #1783c1;
+}
+
+.div1 img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+main {
+    background-color: #1783c1;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las imágenes */
+    gap: 5px; /* Espacio reducido entre imágenes */
+    padding: 20px; /* Espacio reducido alrededor del contenedor */
+}
+
+.flex-container .img {
+    flex: 0 0 calc(35% - 20px); /* Cada imagen ocupa el 45% del ancho del contenedor */
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten al ancho */
+}
+.flex-container img {
+    width: 100%; /* Las imágenes ocuparán el 100% de su contenedor ajustado */
+    height: 200px; /* Altura fija para todas las imágenes */
+    border-radius: 10px; /* Ajusta el borde redondeado */
+    object-fit: cover; /* Asegura que las imágenes se vean bien ajustadas */
+}
+
+@media (max-width: 800px) {
+    .flex-container .img {
+        flex: 0 0 calc(100% - 10px); /* Para pantallas pequeñas, las imágenes ocupan el 100% */
+    }
+}
+
+img {
+    border-radius: 10px; /* Ajuste para bordes suaves */
+}
+
+a {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #f1efef;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(32, 62, 73, 1);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
